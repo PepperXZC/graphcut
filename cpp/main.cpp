@@ -489,11 +489,11 @@ static void on_mouse(int event, int x, int y, int flags, void* param)
 
 int main()
 {
-    string filename = "/Users/pepperxzc/projects/graphcut/data/IMG-102223-0001.png";//分割图像路径
-    Mat image = imread(filename, 1);
+    string firstfile = "C:/Users/1/Desktop/graphcut/data/IMG-102223-0002.png";//分割图像路径
+    Mat image = imread(firstfile, 1);
     if (image.empty())
     {
-        cout << "\n Durn, couldn't read image filename " << filename << endl;
+        cout << "\n Durn, couldn't read image filename " << firstfile << endl;
         return 1;
     }
     const string winName = "image";
